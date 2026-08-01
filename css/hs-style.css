@@ -421,19 +421,7 @@ h2 .script{
   font-family:var(--font-script);font-weight:600;font-size:27px;color:var(--gold-deep);
 }
 
-/* ============ FOLLOW ALONG ============ */
-.follow{background:var(--green-deep);color:var(--cream);overflow:hidden}
-.follow .kicker{color:#E8CE7A}
-.follow .kicker::before,.follow .kicker::after{background:var(--gold)}
-.follow h2{color:var(--cream)}
-.follow h2 .script{color:#E8CE7A}
-.follow .sec-intro{color:#CDD5C4}
-.follow-inner{position:relative;text-align:center}
-.follow-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:40px}
-.follow .handle{
-  margin-top:30px;font-size:19px;color:#CDD5C4;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;
-}
-.follow .handle b{color:var(--cream);font-weight:600;letter-spacing:.03em}
+/* ============ SOCIAL ICONS ============ */
 .soc{display:flex;gap:14px;align-items:center}
 .soc a{
   display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;
@@ -441,11 +429,7 @@ h2 .script{
   transition:background .25s, transform .25s;
 }
 .soc a:hover{background:rgba(201,162,39,.28);transform:translateY(-3px)}
-.follow .wheat-bg{
-  position:absolute;pointer-events:none;opacity:.1;
-}
-.follow .wheat-bg.l{left:-40px;top:-30px;transform:rotate(-14deg)}
-.follow .wheat-bg.r{right:-40px;bottom:-40px;transform:rotate(160deg)}
+.foot-soc{justify-content:center;margin-top:26px}
 
 /* ============ VISIT ============ */
 .visit{background:var(--cream)}
