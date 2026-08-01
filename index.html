@@ -31,6 +31,7 @@
     <nav class="nav-links" aria-label="Primary">
       <a href="#story">Our Story</a>
       <a href="#farm">The Farm</a>
+      <a href="#gallery">Gallery</a>
       <a href="#stand">Farm Stand</a>
       <a href="#visit">Visit</a>
     </nav>
@@ -44,6 +45,7 @@
   <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
     <a href="#story">Our Story</a>
     <a href="#farm">The Farm</a>
+    <a href="#gallery">Gallery</a>
     <a href="#stand">Farm Stand</a>
     <a href="#visit">Visit</a>
     <a href="https://www.youtube.com/@HillsteadFarms" rel="noopener">YouTube — Follow Along →</a>
@@ -239,6 +241,74 @@
           <p>Sixty broilers raised on grass this spring and processed right here — our first time, start to finish. The whole story's on the channel.</p>
           <div class="foot">60 birds · spring 2026</div>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section class="gallery sec-pad" id="gallery">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="kicker">From the Place Itself</p>
+        <h2>What it actually <span class="script">looks like</span></h2>
+        <p class="sec-intro">No stock photos, no borrowed shots — just the fields, the flock,
+        and the food, exactly as they came off this place.</p>
+      </div>
+
+      <div class="gal-grid">
+        <button class="gal-item wide tall reveal" type="button"
+                data-full="img/hero-hillside.jpg"
+                data-cap="Morning light over the hilltop pasture and hay field">
+          <img src="img/hero-hillside.jpg" width="1200" height="900" loading="lazy"
+               alt="Morning light over the mowed hilltop pasture and hay field at Hillstead Farms">
+          <span class="gal-ph" aria-hidden="true">Photo coming</span>
+          <span class="gal-cap">The ridge at first light</span>
+        </button>
+
+        <button class="gal-item reveal" type="button"
+                data-full="img/gallery/hens.jpg"
+                data-cap="The laying flock out on grass">
+          <img src="img/gallery/hens.jpg" width="800" height="600" loading="lazy"
+               alt="Laying hens out on grass at Hillstead Farms">
+          <span class="gal-ph" aria-hidden="true">Photo coming</span>
+          <span class="gal-cap">Forty-six hens, out on grass</span>
+        </button>
+
+        <button class="gal-item reveal" type="button"
+                data-full="img/gallery/eggs.jpg"
+                data-cap="The morning basket — mixed-color eggs, washed on the porch">
+          <img src="img/gallery/eggs.jpg" width="800" height="600" loading="lazy"
+               alt="A basket of mixed-color farm-fresh eggs collected that morning">
+          <span class="gal-ph" aria-hidden="true">Photo coming</span>
+          <span class="gal-cap">The morning basket</span>
+        </button>
+
+        <button class="gal-item reveal" type="button"
+                data-full="img/gallery/garden.jpg"
+                data-cap="July rows — tomatoes, beans, and sweet corn coming in">
+          <img src="img/gallery/garden.jpg" width="800" height="600" loading="lazy"
+               alt="Garden rows of tomatoes, beans, and sweet corn in July">
+          <span class="gal-ph" aria-hidden="true">Photo coming</span>
+          <span class="gal-cap">July rows</span>
+        </button>
+
+        <button class="gal-item reveal" type="button"
+                data-full="img/gallery/sourdough.jpg"
+                data-cap="Jalapeño cheddar minis, straight out of the farm kitchen">
+          <img src="img/gallery/sourdough.jpg" width="800" height="600" loading="lazy"
+               alt="Jalapeño cheddar sourdough minis fresh from the farm kitchen">
+          <span class="gal-ph" aria-hidden="true">Photo coming</span>
+          <span class="gal-cap">Out of the farm kitchen</span>
+        </button>
+
+        <button class="gal-item reveal" type="button"
+                data-full="img/gallery/blackberries.jpg"
+                data-cap="Wild blackberries along the fence rows — nobody planted these">
+          <img src="img/gallery/blackberries.jpg" width="800" height="600" loading="lazy"
+               alt="Wild blackberries picked along the fence rows">
+          <span class="gal-ph" aria-hidden="true">Photo coming</span>
+          <span class="gal-cap">Wild blackberries</span>
+        </button>
       </div>
     </div>
   </section>
@@ -439,6 +509,7 @@
     <nav class="foot-links" aria-label="Footer">
       <a href="#story">Our Story</a>
       <a href="#farm">The Farm</a>
+      <a href="#gallery">Gallery</a>
       <a href="#stand">Farm Stand</a>
       <a href="https://www.youtube.com/@HillsteadFarms" rel="noopener">YouTube</a>
     </nav>
@@ -447,6 +518,15 @@
     <p class="copy">© 2026 HILLSTEAD FARMS · COTTONTOWN, TENNESSEE</p>
   </div>
 </footer>
+
+<!-- ================= GALLERY LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button class="lb-close" id="lbClose" type="button" aria-label="Close photo">&times;</button>
+  <figure class="lb-figure">
+    <img id="lbImg" src="" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+</div>
 
 <script src="js/hs-site.js" defer></script>
 </body>
