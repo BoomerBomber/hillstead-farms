@@ -320,10 +320,12 @@
         <h2>Small-batch, <span class="script">when we have it</span></h2>
         <p class="sec-intro">We're a young farm — what's available changes week to week.
         Call or text before you drive out, and we'll set it aside.</p>
+        <p class="stand-updated" id="standUpdated" aria-live="polite"></p>
       </div>
 
       <div class="stand-grid">
-        <article class="s-card reveal">
+        <article class="s-card reveal" data-inv="eggs">
+          <span class="inv-badge" hidden></span>
           <div class="art" aria-hidden="true">
             <svg width="150" height="96" viewBox="0 0 150 96">
               <path d="M30 46 C 30 26, 44 14, 58 14 C 76 14, 86 32, 86 46 C 86 62, 72 72, 58 72 C 44 72, 30 62, 30 46 Z" fill="#FDFAF1" stroke="#B98E20" stroke-width="3"/>
@@ -334,6 +336,7 @@
           <div class="body">
             <h3>Farm-Fresh Eggs</h3>
             <p class="desc">Mixed-color dozens from the forty-six, collected and washed the same morning. Most weeks there's a basket to spare.</p>
+            <p class="inv-note" hidden></p>
             <div class="price">By the Dozen<small>Ask what's in the basket</small></div>
             <div class="order-row">
               <a class="btn btn-gold" href="tel:+16153377034">Call</a>
@@ -342,7 +345,8 @@
           </div>
         </article>
 
-        <article class="s-card reveal">
+        <article class="s-card reveal" data-inv="sourdough">
+          <span class="inv-badge" hidden></span>
           <div class="art" aria-hidden="true">
             <svg width="150" height="96" viewBox="0 0 150 96">
               <ellipse cx="75" cy="52" rx="44" ry="26" fill="rgba(201,162,39,.14)" stroke="#B98E20" stroke-width="3"/>
@@ -356,6 +360,7 @@
           <div class="body">
             <h3>Sourdough Minis</h3>
             <p class="desc">From the farm kitchen — jalapeño cheddar minis made with flour, water, salt, and sourdough love.</p>
+            <p class="inv-note" hidden></p>
             <div class="price">$7<small>Jalapeño Cheddar Mini</small></div>
             <div class="order-row">
               <a class="btn btn-gold" href="tel:+16153377034">Call</a>
@@ -364,7 +369,8 @@
           </div>
         </article>
 
-        <article class="s-card reveal">
+        <article class="s-card reveal" data-inv="produce">
+          <span class="inv-badge" hidden></span>
           <div class="art" aria-hidden="true">
             <svg width="150" height="96" viewBox="0 0 150 96">
               <ellipse cx="56" cy="52" rx="20" ry="16" fill="rgba(47,82,51,.1)" stroke="#2F5233" stroke-width="3"/>
@@ -381,6 +387,7 @@
           <div class="body">
             <h3>Seasonal Produce</h3>
             <p class="desc">When the garden outruns the canning pot — tomatoes, beans, sweet corn, and berries at summer peak.</p>
+            <p class="inv-note" hidden></p>
             <div class="price">In Season<small>July – September</small></div>
             <div class="order-row">
               <a class="btn btn-gold" href="tel:+16153377034">Call</a>
@@ -389,7 +396,8 @@
           </div>
         </article>
 
-        <article class="s-card reveal">
+        <article class="s-card reveal" data-inv="chicken">
+          <span class="inv-badge" hidden></span>
           <div class="art" aria-hidden="true">
             <svg width="150" height="96" viewBox="0 0 150 96">
               <path d="M46 34c0-14 14-24 30-22 18 2 30 16 26 32-3 12-14 20-26 20-4 8-12 14-20 14-10 0-18-8-18-18 0-8 5-15 12-18-3-2-4-5-4-8z"
@@ -402,6 +410,7 @@
           <div class="body">
             <h3>Pasture-Raised Chicken</h3>
             <p class="desc">Whole birds from this spring's freezer project — raised on grass, processed right here, start to finish.</p>
+            <p class="inv-note" hidden></p>
             <div class="price">Ask Availability<small>Whole birds, limited</small></div>
             <div class="order-row">
               <a class="btn btn-gold" href="tel:+16153377034">Call</a>
@@ -487,6 +496,6 @@
   </figure>
 </div>
 
-<script src="js/hs-site.js" defer></script>
+<script src="js/hillstead.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,10 @@
+{
+  "updated": "2026-08-14",
+  "note": "",
+  "items": {
+    "eggs":      { "status": "available", "note": "" },
+    "sourdough": { "status": "ask",       "note": "Text to reserve the next bake" },
+    "produce":   { "status": "season",    "note": "" },
+    "chicken":   { "status": "ask",       "note": "" }
+  }
+}

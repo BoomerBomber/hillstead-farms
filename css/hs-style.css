@@ -241,8 +241,10 @@ h2 .script{
 }
 .sec-head{margin-bottom:56px}
 
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
-.reveal.in{opacity:1;transform:none}
+/* Reveal styling is gated behind html.js (added by js/hillstead.js) so the page
+   renders completely even if the script file is missing or blocked. */
+html.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+html.js .reveal.in{opacity:1;transform:none}
 
 /* ============ STORY ============ */
 .story{background:var(--cream)}
@@ -390,6 +392,7 @@ h2 .script{
 @media(max-width:1020px){.stand-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.stand-grid{grid-template-columns:1fr}}
 .s-card{
+  position:relative;
   background:var(--card);border:1.5px solid var(--hairline-soft);border-radius:22px;overflow:hidden;
   box-shadow:var(--shadow-soft);display:flex;flex-direction:column;
   transition:transform .35s var(--ease), box-shadow .35s;
@@ -411,6 +414,27 @@ h2 .script{
 }
 .s-card .order-row{display:flex;gap:10px;justify-content:center;margin-top:18px;flex-wrap:wrap}
 .s-card .order-row .btn{padding:10px 18px;font-size:14px}
+/* Live weekly inventory (inventory.json) */
+.stand-updated{
+  min-height:24px;margin:16px auto 0;text-align:center;
+  font-weight:600;font-size:14px;letter-spacing:.18em;color:var(--gold-deep);text-transform:uppercase;
+}
+.inv-badge{
+  position:absolute;top:14px;left:14px;z-index:1;
+  font-family:var(--font-body);font-weight:600;font-size:11.5px;
+  letter-spacing:.14em;text-transform:uppercase;
+  padding:5px 12px;border-radius:999px;border:1.5px solid transparent;
+}
+.inv-available{background:var(--green-deep);border-color:var(--green-deep);color:var(--cream)}
+.inv-season{background:var(--green);border-color:var(--green);color:var(--cream)}
+.inv-low{background:var(--gold);border-color:var(--gold);color:#2C230A}
+.inv-out{background:var(--cream-deep);border-color:var(--hairline-soft);color:var(--ink-soft)}
+.inv-ask{background:var(--card);border-color:var(--gold);color:var(--gold-deep)}
+.inv-note{
+  font-weight:600;font-size:15px;color:var(--green);
+  margin:-8px 0 16px;
+}
+
 .stand-note{
   margin-top:44px;text-align:center;
   font-weight:600;font-size:15px;letter-spacing:.14em;color:var(--green);text-transform:uppercase;
