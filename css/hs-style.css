@@ -203,6 +203,12 @@ html.js .hero-photo{animation:heroDrift 36s ease-in-out infinite alternate}
 .hero .sub .slogan{display:block;font-family:var(--font-script);font-weight:600;font-size:clamp(30px,3.6vw,44px);color:#EBD891;letter-spacing:.01em;margin-bottom:0;text-shadow:0 2px 18px rgba(20,32,22,.55)}
 .hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 .hero-chips{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:40px}
+.hero-est{
+  margin:44px auto 0;display:flex;align-items:center;justify-content:center;gap:16px;
+  font-family:var(--font-body);font-weight:600;font-size:14px;letter-spacing:.34em;text-transform:uppercase;
+  color:#EBD891;text-shadow:0 1px 10px rgba(20,32,22,.6);
+}
+.hero-est::before,.hero-est::after{content:"";width:34px;height:1px;background:rgba(235,216,145,.7)}
 .chip{
   font-weight:600;font-size:14.5px;letter-spacing:.06em;color:#F2EDDD;
   border:1px solid rgba(247,242,229,.35);background:rgba(24,37,26,.42);
