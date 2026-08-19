@@ -102,9 +102,12 @@ body::after{
 }
 @media(max-width:680px){.nav-inner{padding:12px 20px}}
 .brand{display:flex;align-items:center;gap:13px}
-.brand img{width:46px;height:46px}
+.brand .mark{width:52px;height:52px}
+.brand .mark-light{display:none}
+.nav.scrolled .brand .mark-light,.nav.open .brand .mark-light{display:block}
+.nav.scrolled .brand .mark-dark,.nav.open .brand .mark-dark{display:none}
 .brand .word{
-  font-family:var(--font-display);font-weight:700;font-size:21px;color:var(--green-deep);
+  font-family:'Fraunces',var(--font-display);font-weight:600;font-size:23px;color:var(--green-deep);
   line-height:1.05;letter-spacing:.01em;white-space:nowrap;
 }
 .brand .word em{
@@ -488,7 +491,7 @@ footer{
   background:var(--green-deep);color:#CDD5C4;
   padding:64px 0 40px;text-align:center;position:relative;
 }
-footer .crest{width:120px;height:120px;margin:0 auto 20px;border-radius:50%;box-shadow:0 10px 40px -12px rgba(0,0,0,.5)}
+footer .foot-logo{width:360px;max-width:80vw;height:auto;margin:0 auto 6px;display:block}
 footer .name{
   font-family:var(--font-display);font-weight:800;font-size:30px;color:var(--cream);letter-spacing:.02em;
 }
