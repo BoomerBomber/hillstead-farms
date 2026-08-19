@@ -183,7 +183,7 @@ html.js .hero-photo{animation:heroDrift 36s ease-in-out infinite alternate}
     linear-gradient(180deg, rgba(20,32,22,.62) 0%, rgba(20,32,22,.34) 34%, rgba(20,32,22,.38) 70%, rgba(38,48,31,.78) 100%),
     radial-gradient(90% 70% at 50% 46%, rgba(20,32,22,.05), rgba(20,32,22,.38) 100%);
 }
-.hero-content{position:relative;z-index:2;padding:130px 24px 90px;max-width:900px}
+.hero-content{position:relative;z-index:2;padding:130px 24px 120px;max-width:900px}
 .hero-script{
   font-family:var(--font-script);font-weight:600;font-size:clamp(28px,3.4vw,40px);
   color:#EBD891;text-shadow:0 2px 18px rgba(20,32,22,.5);
@@ -198,9 +198,11 @@ html.js .hero-photo{animation:heroDrift 36s ease-in-out infinite alternate}
   text-shadow:0 2px 14px rgba(20,32,22,.6);
 }
 .hero .sub b{color:#fff;font-weight:600}
+.hero-flourish{display:flex;justify-content:center;margin:6px auto 0}
+.hero .sub{max-width:700px}
 .hero .sub .slogan{display:block;font-family:var(--font-display);font-weight:700;font-size:clamp(24px,2.6vw,31px);color:#F7F2E5;letter-spacing:.005em;margin-bottom:10px}
 .hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-.hero-chips{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:54px}
+.hero-chips{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:40px}
 .chip{
   font-weight:600;font-size:14.5px;letter-spacing:.06em;color:#F2EDDD;
   border:1px solid rgba(247,242,229,.35);background:rgba(24,37,26,.42);
