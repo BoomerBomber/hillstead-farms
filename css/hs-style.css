@@ -200,7 +200,7 @@ html.js .hero-photo{animation:heroDrift 36s ease-in-out infinite alternate}
 .hero .sub b{color:#fff;font-weight:600}
 .hero-flourish{display:flex;justify-content:center;margin:6px auto 0}
 .hero .sub{max-width:700px}
-.hero .sub .slogan{display:block;font-family:var(--font-display);font-weight:700;font-size:clamp(24px,2.6vw,31px);color:#F7F2E5;letter-spacing:.005em;margin-bottom:0}
+.hero .sub .slogan{display:block;font-family:var(--font-script);font-weight:600;font-size:clamp(30px,3.6vw,44px);color:#EBD891;letter-spacing:.01em;margin-bottom:0;text-shadow:0 2px 18px rgba(20,32,22,.55)}
 .hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 .hero-chips{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:40px}
 .chip{
