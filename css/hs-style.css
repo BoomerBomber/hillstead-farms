@@ -173,7 +173,10 @@ body::after{
 }
 .hero-photo{
   position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 58%;
+  transform-origin:50% 60%;
 }
+html.js .hero-photo{animation:heroDrift 36s ease-in-out infinite alternate}
+@keyframes heroDrift{from{transform:scale(1)}to{transform:scale(1.06) translateY(-1.2%)}}
 .hero-veil{
   position:absolute;inset:0;
   background:
@@ -247,8 +250,21 @@ h2 .script{
 
 /* Reveal styling is gated behind html.js (added by js/hillstead.js) so the page
    renders completely even if the script file is missing or blocked. */
-html.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+html.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:calc(var(--i,0) * 70ms)}
 html.js .reveal.in{opacity:1;transform:none}
+
+/* hero entrance — staged, compositor-only, once on load */
+html.js .hero-in{opacity:0;transform:translateY(18px);animation:heroIn .9s var(--ease) forwards;animation-delay:calc(180ms + var(--i,0) * 110ms)}
+@keyframes heroIn{to{opacity:1;transform:none}}
+
+/* inventory badge pop when live data lands */
+html.js .inv-badge:not([hidden]){animation:badgePop .45s var(--ease) both}
+@keyframes badgePop{from{opacity:0;transform:translateY(-6px) scale(.92)}to{opacity:1;transform:none}}
+
+/* press feedback on cards/tiles (hover lift already exists) */
+.f-card:active,.s-card:active{transform:translateY(-2px)}
+.gal-item:active{transform:translateY(-1px)}
+.gal-item:active img{transform:scale(1.02)}
 
 /* ============ STORY ============ */
 .story{background:var(--cream)}
@@ -512,6 +528,10 @@ footer .copy{
 
 /* ============ REDUCED MOTION ============ */
 @media (prefers-reduced-motion: reduce){
+  html.js .hero-photo{animation:none}
+  html.js .hero-in{animation:none;opacity:1;transform:none}
+  html.js .inv-badge:not([hidden]){animation:none}
+  html.js .reveal{transition-delay:0s}
   *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
   .reveal{opacity:1 !important;transform:none !important}
   html{scroll-behavior:auto}
