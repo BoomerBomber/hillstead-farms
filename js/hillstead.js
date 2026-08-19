@@ -107,6 +107,44 @@
       .catch(function () { /* badges are an enhancement — never break the page */ });
   }
 
+
+  // ---------- Newsletter signup ----------
+  // Posts to the form backend in the background; without JS the form still
+  // submits normally and the backend shows its own thank-you page.
+  var newsForm = document.getElementById("newsForm");
+  var newsMsg = document.getElementById("newsMsg");
+
+  if (newsForm && newsMsg && window.fetch) {
+    newsForm.addEventListener("submit", function (event) {
+      var action = newsForm.getAttribute("action") || "";
+      if (action.indexOf("YOUR_FORM_ID") !== -1) {
+        event.preventDefault();
+        newsMsg.textContent = "Signups open soon — text us at 615-337-7034 for now.";
+        newsMsg.classList.remove("err");
+        return;
+      }
+      event.preventDefault();
+      newsForm.classList.add("is-busy");
+      newsMsg.textContent = "";
+      newsMsg.classList.remove("err");
+
+      fetch(action, {
+        method: "POST",
+        headers: { "Accept": "application/json" },
+        body: new FormData(newsForm)
+      }).then(function (res) {
+        if (!res.ok) throw new Error("bad status " + res.status);
+        newsForm.reset();
+        newsMsg.textContent = "You’re on the list — thanks! We’ll write when something’s fresh.";
+      }).catch(function () {
+        newsMsg.textContent = "Hmm, that didn’t go through. Try again, or text us at 615-337-7034.";
+        newsMsg.classList.add("err");
+      }).then(function () {
+        newsForm.classList.remove("is-busy");
+      });
+    });
+  }
+
   // ---------- Gallery ----------
   // Tiles whose photo file isn't there yet fall back to a styled placeholder
   // instead of a broken image, so the section always looks finished.

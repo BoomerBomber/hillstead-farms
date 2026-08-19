@@ -1,0 +1,12 @@
+# source file => output slug   (edit, then run: powershell -File tools\photos.ps1 build)
+DSC00739.JPG => loaves-jalapeno-blueberry
+DSC00743.JPG => jalapeno-cheddar-sliced
+DSC00749.JPG => jalapeno-cheddar-loaves
+DSC00760.JPG => plain-artisan-boule
+DSC00761.JPG => plain-artisan-sliced
+DSC00763.JPG => sandwich-bread-slices
+IMG_6359.jpeg => meat-birds-tractor
+IMG_6366.jpeg => meat-birds-waterer
+IMG_6391.jpg => egg-basket
+IMG_6467.jpeg => whole-chickens
+IMG_6478.jpeg => eggs-dozens

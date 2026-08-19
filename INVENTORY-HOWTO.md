@@ -20,7 +20,9 @@ Edit it, save, and the live site updates itself about a minute later. No other f
     "eggs":      { "status": "available", "note": "" },
     "sourdough": { "status": "ask",       "note": "Text to reserve the next bake" },
     "produce":   { "status": "season",    "note": "Tomatoes and sweet corn this week" },
-    "chicken":   { "status": "out",       "note": "More birds next spring" }
+    "chicken":   { "status": "out",       "note": "More birds next spring" },
+    "flour":     { "status": "available", "note": "Milled to order" },
+    "pie":       { "status": "ask",       "note": "" }
   }
 }
 ```

@@ -1,10 +1,12 @@
 {
-  "updated": "2026-08-14",
+  "updated": "2026-08-19",
   "note": "",
   "items": {
     "eggs":      { "status": "available", "note": "" },
     "sourdough": { "status": "ask",       "note": "Text to reserve the next bake" },
     "produce":   { "status": "season",    "note": "" },
-    "chicken":   { "status": "ask",       "note": "" }
+    "chicken":   { "status": "ask",       "note": "" },
+    "flour":     { "status": "available", "note": "Milled to order" },
+    "pie":       { "status": "ask",       "note": "" }
   }
 }
