@@ -195,6 +195,7 @@ body::after{
   text-shadow:0 2px 14px rgba(20,32,22,.6);
 }
 .hero .sub b{color:#fff;font-weight:600}
+.hero .sub .slogan{display:block;font-family:var(--font-display);font-weight:700;font-size:clamp(24px,2.6vw,31px);color:#F7F2E5;letter-spacing:.005em;margin-bottom:10px}
 .hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 .hero-chips{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:54px}
 .chip{
