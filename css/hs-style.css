@@ -324,6 +324,12 @@ html.js .inv-badge:not([hidden]){animation:badgePop .45s var(--ease) both}
   display:flex;flex-direction:column;
 }
 .f-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.f-card .icon svg{transition:transform .35s var(--ease)}
+.f-card:hover .icon svg{transform:translateY(-4px) rotate(-3deg)}
+.f-card .foot{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.f-card .foot::after{content:"↓";font-size:15px;color:var(--gold-deep);transition:transform .3s var(--ease)}
+.f-card:hover .foot::after{transform:translateY(3px)}
+#farm,#gallery,#stand,#contact,[id^="stand-"]{scroll-margin-top:92px}
 .f-card .icon{height:64px;display:flex;align-items:center;margin-bottom:18px}
 .f-card h3{font-family:var(--font-display);font-weight:700;font-size:24px;color:var(--green-deep);margin-bottom:10px}
 .f-card p{font-size:17.5px;color:var(--ink-soft);line-height:1.65}
