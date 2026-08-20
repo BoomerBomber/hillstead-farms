@@ -324,6 +324,8 @@ html.js .inv-badge:not([hidden]){animation:badgePop .45s var(--ease) both}
   display:flex;flex-direction:column;
 }
 .f-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.f-card{position:relative}
+.f-card .inv-badge{left:auto;right:14px}
 .f-card .icon svg{transition:transform .35s var(--ease)}
 .f-card:hover .icon svg{transform:translateY(-4px) rotate(-3deg)}
 .f-card .foot{display:flex;align-items:center;justify-content:space-between;gap:10px}
@@ -465,6 +467,7 @@ html.js .inv-badge:not([hidden]){animation:badgePop .45s var(--ease) both}
 .inv-low{background:var(--gold);border-color:var(--gold);color:#2C230A}
 .inv-out{background:var(--cream-deep);border-color:var(--hairline-soft);color:var(--ink-soft)}
 .inv-ask{background:var(--card);border-color:var(--gold);color:var(--gold-deep)}
+.inv-soon{background:var(--card);border-color:var(--green);color:var(--green)}
 .inv-note{
   font-weight:600;font-size:15px;color:var(--green);
   margin:-8px 0 16px;

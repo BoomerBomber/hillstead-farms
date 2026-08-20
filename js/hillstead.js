@@ -52,7 +52,8 @@
     low: ['Almost Gone', 'inv-low'],
     out: ['Sold Out', 'inv-out'],
     season: ['In Season', 'inv-season'],
-    ask: ['Text to Check', 'inv-ask']
+    ask: ['Text to Check', 'inv-ask'],
+    soon: ['Coming Soon', 'inv-soon']
   };
 
   function formatInvDate(iso) {
@@ -68,23 +69,25 @@
 
     var items = data.items || {};
     Object.keys(items).forEach(function (key) {
-      var card = document.querySelector('[data-inv="' + key + '"]');
+      var cards = document.querySelectorAll('[data-inv="' + key + '"]');
       var item = items[key];
-      if (!card || !item) return;
+      if (!cards.length || !item) return;
 
       var status = INV_STATUS[String(item.status || '').toLowerCase()];
-      var badge = card.querySelector('.inv-badge');
-      if (badge && status) {
-        badge.textContent = status[0];
-        badge.classList.add(status[1]);
-        badge.hidden = false;
-      }
+      cards.forEach(function (card) {
+        var badge = card.querySelector('.inv-badge');
+        if (badge && status) {
+          badge.textContent = status[0];
+          badge.classList.add(status[1]);
+          badge.hidden = false;
+        }
 
-      var noteEl = card.querySelector('.inv-note');
-      if (noteEl && item.note) {
-        noteEl.textContent = item.note;
-        noteEl.hidden = false;
-      }
+        var noteEl = card.querySelector('.inv-note');
+        if (noteEl && item.note) {
+          noteEl.textContent = item.note;
+          noteEl.hidden = false;
+        }
+      });
     });
 
     var updatedEl = document.getElementById('standUpdated');

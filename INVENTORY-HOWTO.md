@@ -1,6 +1,6 @@
 # Updating the Farm Stand inventory (from your phone)
 
-Everything customers see under **Farm Stand** is driven by one file: `inventory.json`.
+Everything customers see under **Farm Stand** — and the badges on the **What we're raising** cards — is driven by one file: `inventory.json`.
 Edit it, save, and the live site updates itself about a minute later. No other file ever needs touching.
 
 ## The weekly routine (~60 seconds)
@@ -17,6 +17,7 @@ Edit it, save, and the live site updates itself about a minute later. No other f
   "updated": "2026-08-14",
   "note": "",
   "items": {
+    "pumpkins":  { "status": "soon",      "note": "" },
     "eggs":      { "status": "available", "note": "" },
     "sourdough": { "status": "ask",       "note": "Text to reserve the next bake" },
     "produce":   { "status": "season",    "note": "Tomatoes and sweet corn this week" },
@@ -40,6 +41,7 @@ Edit it, save, and the live site updates itself about a minute later. No other f
 | `out`       | SOLD OUT (gray) |
 | `season`    | IN SEASON (green) |
 | `ask`       | TEXT TO CHECK (outlined) |
+| `soon`      | COMING SOON (outlined green) |
 
 ## Rules that keep it painless
 
