@@ -28,6 +28,13 @@
   }
   .pl-promise b{color:var(--green-deep);font-weight:600}
 
+  .pl-lead{
+    margin:18px auto 0;display:flex;align-items:center;justify-content:center;gap:14px;
+    font-weight:600;font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);
+  }
+  .pl-lead::before,.pl-lead::after{content:"";width:56px;height:1.5px;background:var(--gold);opacity:.65}
+  @media(max-width:600px){.pl-lead::before,.pl-lead::after{width:24px}.pl-lead{font-size:12.5px;letter-spacing:.14em}}
+
   .pl-sec{max-width:800px;margin:52px auto 0}
   .pl-sec-head{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
   .pl-sec-head .script{font-family:var(--font-script);font-weight:600;font-size:27px;color:var(--gold-deep)}
@@ -108,6 +115,7 @@
 
       <p class="pl-promise"><b>Every loaf is made with organic flour, organic ingredients, and avocado oil only — never seed oils.</b><br>
       Happy to pre-slice any bread — just keep sliced loaves in an airtight container for freshness.</p>
+      <p class="pl-lead">Three days needed after ordering</p>
 
       <!-- ============ SANDWICH BREAD ============ -->
       <div class="pl-sec">

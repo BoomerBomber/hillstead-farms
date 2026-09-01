@@ -468,6 +468,10 @@ html.js .inv-badge:not([hidden]){animation:badgePop .45s var(--ease) both}
 .inv-out{background:var(--cream-deep);border-color:var(--hairline-soft);color:var(--ink-soft)}
 .inv-ask{background:var(--card);border-color:var(--gold);color:var(--gold-deep)}
 .inv-soon{background:var(--card);border-color:var(--green);color:var(--green)}
+.s-card .lead-time{
+  font-weight:600;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold-deep);margin:0 0 16px;
+}
 .inv-note{
   font-weight:600;font-size:15px;color:var(--green);
   margin:-8px 0 16px;
