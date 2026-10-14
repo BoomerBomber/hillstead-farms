@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Links — Hillstead Farms</title>
+<meta name="description" content="All the ways to reach Hillstead Farms in Cottontown, Tennessee — call or text an order, see what's fresh, the price list, and where to follow along.">
+<meta property="og:title" content="Hillstead Farms — Links">
+<meta property="og:description" content="Call or text an order, see what's fresh this week, and follow along with our fifty-acre family farm in Cottontown, TN.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.thehillsteadfarms.com/links">
+<meta name="theme-color" content="#F7F2E5">
+<link rel="canonical" href="https://www.thehillsteadfarms.com/links">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/hs-style.css">
+<style>
+  .lk-page{min-height:100vh;padding:40px 16px 48px;display:flex;justify-content:center;
+    background:
+      radial-gradient(900px 420px at 50% -120px, rgba(201,162,39,.16), transparent 70%),
+      var(--cream)}
+  .lk-col{width:100%;max-width:520px}
+
+  .lk-head{text-align:center}
+  .lk-head .crest{width:150px;height:150px;margin:0 auto 10px;display:block;filter:drop-shadow(0 10px 22px rgba(46,43,35,.16))}
+  .lk-head h1{font-family:'Fraunces',var(--font-display);font-weight:600;font-size:clamp(34px,8vw,44px);
+    color:var(--green-deep);line-height:1.05;margin:0}
+  .lk-head .where{margin-top:8px;font-weight:600;font-size:13px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-deep)}
+  .lk-head .slogan{margin-top:10px;font-family:var(--font-script);font-size:27px;color:var(--green);line-height:1.1}
+
+  .lk-sec{margin-top:30px}
+  .lk-sec-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+  .lk-sec-head span{font-weight:600;font-size:12.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--green)}
+  .lk-sec-head::after{content:"";flex:1;height:1.5px;background:linear-gradient(90deg,var(--gold),rgba(201,162,39,.12))}
+
+  .lk{display:flex;align-items:center;gap:14px;width:100%;margin-top:12px;padding:15px 18px;
+    background:var(--card);border-radius:16px;text-decoration:none;color:var(--ink);
+    box-shadow:var(--shadow-soft),inset 0 0 0 1.4px var(--hairline);
+    transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+  .lk:hover{transform:translateY(-2px);box-shadow:var(--shadow),inset 0 0 0 1.4px rgba(30,59,44,.3)}
+  .lk .ic{flex:0 0 44px;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(47,82,51,.08)}
+  .lk .ic svg{display:block}
+  .lk .tx{flex:1;min-width:0}
+  .lk .tx b{display:block;font-family:'Fraunces',var(--font-display);font-weight:600;font-size:20px;color:var(--green-deep);line-height:1.15}
+  .lk .tx small{display:block;margin-top:3px;font-size:15.5px;color:var(--ink-soft);line-height:1.35}
+  .lk .arr{flex:0 0 auto;color:var(--gold-deep);font-size:22px;transition:transform .25s var(--ease)}
+  .lk:hover .arr{transform:translateX(4px)}
+
+  .lk.primary{background:var(--green-deep);box-shadow:var(--shadow)}
+  .lk.primary .ic{background:rgba(201,162,39,.22)}
+  .lk.primary .tx b{color:var(--cream)}
+  .lk.primary .tx small{color:rgba(247,242,229,.78)}
+  .lk.primary .arr{color:var(--gold)}
+  .lk.primary:hover{background:var(--green)}
+
+  .lk-share{margin-top:34px;padding:22px 20px 20px;text-align:center;background:var(--card);border-radius:18px;
+    box-shadow:var(--shadow-soft),inset 0 0 0 1.4px var(--hairline)}
+  .lk-share h2{font-family:var(--font-script);font-weight:600;font-size:26px;color:var(--gold-deep);margin:0;line-height:1.1}
+  .lk-share p{margin:6px 0 0;font-size:16px;color:var(--ink-soft)}
+  .lk-share .qr{width:168px;height:168px;margin:16px auto 0;padding:10px;background:#fff;border-radius:12px;
+    box-shadow:inset 0 0 0 1.4px var(--hairline)}
+  .lk-share .qr svg{display:block;width:100%;height:100%}
+  .lk-share .url{margin-top:12px;font-family:var(--font-body);font-weight:600;font-size:16px;letter-spacing:.04em;color:var(--green-deep);word-break:break-all}
+  .lk-share .btn{margin-top:12px}
+  .lk-share .copied{display:block;min-height:20px;margin-top:8px;font-size:14.5px;font-style:italic;color:var(--green)}
+
+  .lk-foot{margin-top:28px;text-align:center;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+  .lk-foot a{color:var(--green-deep);text-decoration:none;border-bottom:1px solid var(--gold)}
+  @media (prefers-reduced-motion:reduce){.lk,.lk .arr{transition:none}}
+</style>
+</head>
+<body>
+<main class="lk-page">
+  <div class="lk-col">
+
+    <header class="lk-head">
+      <img class="crest" src="img/crest.svg" alt="Hillstead Farms crest" width="150" height="150">
+      <h1>Hillstead Farms</h1>
+      <p class="where">Cottontown · Tennessee</p>
+      <p class="slogan">From our hilltop to your table.</p>
+    </header>
+
+    <section class="lk-sec" aria-labelledby="h-order">
+      <div class="lk-sec-head"><span id="h-order">Order</span></div>
+
+      <a class="lk primary" href="sms:+16153377034?body=Hi%20Hillstead%20Farms%2C%20I%E2%80%99d%20like%20to%20order%3A%20">
+        <span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" fill="none" stroke="#C9A227" stroke-width="2" stroke-linejoin="round"/><circle cx="8" cy="10.5" r="1.2" fill="#C9A227"/><circle cx="12" cy="10.5" r="1.2" fill="#C9A227"/><circle cx="16" cy="10.5" r="1.2" fill="#C9A227"/></svg></span>
+        <span class="tx"><b>Text an Order</b><small>Fastest way to reach us — we're usually in the garden.</small></span>
+        <span class="arr">→</span>
+      </a>
+
+      <a class="lk" href="tel:+16153377034">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="#1E3B2C"/></svg></span>
+        <span class="tx"><b>Call 615-337-7034</b><small>Reserve a loaf or ask about the next batch of birds.</small></span>
+        <span class="arr">→</span>
+      </a>
+
+      <a class="lk" href="index.html#stand">
+        <span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10l2-5h14l2 5M4 10v10h16V10M4 10h16M9 20v-6h6v6" fill="none" stroke="#1E3B2C" stroke-width="2" stroke-linejoin="round"/></svg></span>
+        <span class="tx"><b>What's Fresh This Week</b><small>Eggs, sourdough, and pasture-raised chicken — live availability.</small></span>
+        <span class="arr">→</span>
+      </a>
+
+      <a class="lk" href="price-list.html">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3z" fill="none" stroke="#1E3B2C" stroke-width="2" stroke-linejoin="round"/><path d="M9 8h6M9 12h6" stroke="#1E3B2C" stroke-width="2" stroke-linecap="round"/></svg></span>
+        <span class="tx"><b>Price List</b><small>Sandwich loaves, artisan loaves, eggs, and more.</small></span>
+        <span class="arr">→</span>
+      </a>
+    </section>
+
+    <section class="lk-sec" aria-labelledby="h-follow">
+      <div class="lk-sec-head"><span id="h-follow">Follow along</span></div>
+
+      <a class="lk" href="https://www.instagram.com/hillsteadfarmstn" rel="noopener">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 38 38" aria-hidden="true"><rect x="2" y="2" width="34" height="34" rx="10" fill="none" stroke="#1E3B2C" stroke-width="3.4"/><circle cx="19" cy="19" r="7.6" fill="none" stroke="#1E3B2C" stroke-width="3.4"/><circle cx="28.4" cy="9.8" r="2.6" fill="#1E3B2C"/></svg></span>
+        <span class="tx"><b>Instagram</b><small>@hillsteadfarmstn</small></span>
+        <span class="arr">→</span>
+      </a>
+
+      <a class="lk" href="https://www.facebook.com/share/1EnxrR2CyG/?mibextid=wwXIfr" rel="noopener">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 38 38" aria-hidden="true"><circle cx="19" cy="19" r="17" fill="#1E3B2C"/><path d="M21.5 31 L21.5 20.5 L25.4 20.5 L26 16.2 L21.5 16.2 L21.5 13.4 C21.5 12.1 22.1 11 24 11 L26.2 11 L26.2 7.2 C25.4 7.1 23.9 7 22.5 7 C19 7 16.7 9.1 16.7 12.9 L16.7 16.2 L13 16.2 L13 20.5 L16.7 20.5 L16.7 31 Z" fill="#F6F1E4"/></svg></span>
+        <span class="tx"><b>Facebook</b><small>Hillstead Farms</small></span>
+        <span class="arr">→</span>
+      </a>
+
+      <a class="lk" href="https://www.youtube.com/@TheHillsteadFarms" rel="noopener">
+        <span class="ic"><svg width="24" height="18" viewBox="0 0 52 37" aria-hidden="true"><rect x="1" y="1" width="50" height="35" rx="9" fill="#1E3B2C"/><path d="M21 11 L 34 18.5 L 21 26 Z" fill="#F6F1E4"/></svg></span>
+        <span class="tx"><b>YouTube</b><small>@TheHillsteadFarms</small></span>
+        <span class="arr">→</span>
+      </a>
+
+      <a class="lk" href="index.html">
+        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10" fill="none" stroke="#1E3B2C" stroke-width="2" stroke-linejoin="round"/></svg></span>
+        <span class="tx"><b>Our Website</b><small>The farm, the family, and the gallery.</small></span>
+        <span class="arr">→</span>
+      </a>
+    </section>
+
+    <section class="lk-share" aria-labelledby="h-share">
+      <h2 id="h-share">Scan or share</h2>
+      <p>Point a phone camera at the code to open this page.</p>
+      <div class="qr" role="img" aria-label="QR code linking to thehillsteadfarms.com/links">
+        <svg viewBox="0 0 37 37" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg"><path stroke="#1E3B2C" d="M0 0.5h7m2 0h1m2 0h1m2 0h1m2 0h1m2 0h2m2 0h2m3 0h7M0 1.5h1m5 0h1m2 0h1m1 0h3m1 0h2m1 0h2m4 0h1m1 0h1m3 0h1m5 0h1M0 2.5h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h1m1 0h2m1 0h1m1 0h2m1 0h5m2 0h1m1 0h3m1 0h1M0 3.5h1m1 0h3m1 0h1m1 0h1m1 0h3m2 0h1m3 0h1m2 0h2m1 0h4m1 0h1m1 0h3m1 0h1M0 4.5h1m1 0h3m1 0h1m3 0h2m2 0h2m1 0h3m2 0h1m3 0h1m3 0h1m1 0h3m1 0h1M0 5.5h1m5 0h1m5 0h1m1 0h2m1 0h2m1 0h4m6 0h1m5 0h1M0 6.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M10 7.5h3m1 0h2m1 0h1m3 0h2m1 0h2m1 0h2M3 8.5h2m1 0h2m4 0h1m1 0h2m2 0h1m5 0h2m2 0h1m4 0h2M0 9.5h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h2m1 0h3m2 0h3m2 0h2m5 0h3M0 10.5h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m1 0h2m1 0h1m3 0h5m3 0h2m3 0h1m1 0h1M7 11.5h1m2 0h3m2 0h1m10 0h2m1 0h6m1 0h1M3 12.5h1m1 0h2m1 0h2m2 0h3m2 0h1m1 0h1m2 0h2m6 0h2m1 0h1m2 0h1M0 13.5h5m5 0h1m2 0h1m1 0h5m2 0h1m1 0h1m2 0h3m2 0h1m1 0h1M1 14.5h1m3 0h3m1 0h2m1 0h5m1 0h1m2 0h7m1 0h6m1 0h1M1 15.5h1m1 0h2m2 0h1m4 0h2m5 0h1m1 0h3m2 0h1m2 0h7M0 16.5h1m2 0h2m1 0h2m4 0h1m1 0h1m1 0h1m2 0h2m2 0h1m1 0h1m4 0h1m3 0h1m1 0h1M4 17.5h1m4 0h2m1 0h2m1 0h3m3 0h1m1 0h5m1 0h1m1 0h1m1 0h1m1 0h1M0 18.5h2m3 0h2m2 0h2m1 0h3m1 0h4m2 0h1m4 0h1m1 0h5m2 0h1M4 19.5h2m2 0h1m1 0h1m1 0h2m1 0h2m1 0h1m2 0h1m3 0h2m2 0h3m1 0h1m1 0h1M0 20.5h7m3 0h2m1 0h1m1 0h2m3 0h1m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m2 0h2M0 21.5h3m1 0h2m1 0h1m1 0h1m4 0h1m2 0h1m1 0h2m1 0h1m2 0h5m1 0h2m1 0h1M1 22.5h2m3 0h2m2 0h3m2 0h1m1 0h1m1 0h1m1 0h5m1 0h1m1 0h1m2 0h1m2 0h2M1 23.5h2m1 0h2m1 0h1m1 0h1m1 0h3m2 0h1m2 0h2m4 0h1m1 0h2m2 0h1m1 0h2m1 0h1M3 24.5h2m1 0h3m2 0h3m1 0h1m1 0h2m3 0h1m1 0h2m2 0h1m1 0h2m1 0h1M0 25.5h2m1 0h3m1 0h7m1 0h8m2 0h2m2 0h1m2 0h3M0 26.5h2m4 0h1m3 0h2m2 0h1m2 0h1m1 0h1m2 0h3m1 0h2m2 0h1m2 0h4M0 27.5h1m4 0h1m1 0h1m1 0h4m1 0h1m1 0h1m2 0h2m1 0h2m3 0h3m3 0h2m1 0h1M0 28.5h1m3 0h1m1 0h2m1 0h2m1 0h7m2 0h1m2 0h2m1 0h8m1 0h1M8 29.5h1m1 0h1m2 0h5m1 0h1m1 0h1m4 0h1m1 0h1m3 0h3M0 30.5h7m1 0h1m4 0h1m4 0h2m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1m1 0h3m1 0h1M0 31.5h1m5 0h1m4 0h1m1 0h1m4 0h1m1 0h2m1 0h1m1 0h1m1 0h2m3 0h2m1 0h1M0 32.5h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h2m2 0h1m1 0h1m2 0h2m2 0h7m2 0h2M0 33.5h1m1 0h3m1 0h1m1 0h2m1 0h1m3 0h1m2 0h1m5 0h1m5 0h1m2 0h2M0 34.5h1m1 0h3m1 0h1m2 0h2m1 0h1m2 0h2m1 0h1m1 0h4m1 0h3m3 0h3m1 0h2M0 35.5h1m5 0h1m2 0h1m4 0h2m1 0h1m2 0h5m1 0h1m2 0h1m3 0h4M0 36.5h7m6 0h5m2 0h5m3 0h3m1 0h2m2 0h1"/></svg>
+      </div>
+      <p class="url">thehillsteadfarms.com/links</p>
+      <button class="btn btn-ghost on-cream" type="button" id="copyLink">Copy Link</button>
+      <span class="copied" id="copyMsg" aria-live="polite"></span>
+    </section>
+
+    <p class="lk-foot">© 2026 Hillstead Farms · <a href="index.html">thehillsteadfarms.com</a></p>
+  </div>
+</main>
+
+<script>
+(function(){
+  var btn=document.getElementById('copyLink'),msg=document.getElementById('copyMsg');
+  if(!btn)return;
+  var url='https://www.thehillsteadfarms.com/links';
+  btn.addEventListener('click',function(){
+    if(navigator.share){
+      navigator.share({title:'Hillstead Farms',url:url}).catch(function(){});
+      return;
+    }
+    if(!navigator.clipboard){msg.textContent=url;return;}
+    navigator.clipboard.writeText(url).then(function(){msg.textContent='Link copied.';},
+      function(){msg.textContent=url;});
+  });
+})();
+</script>
+</body>
+</html>
