@@ -17,7 +17,6 @@ Edit it, save, and the live site updates itself about a minute later. No other f
   "updated": "2026-08-14",
   "note": "",
   "items": {
-    "pumpkins":  { "status": "soon",      "note": "" },
     "eggs":      { "status": "available", "note": "" },
     "sourdough": { "status": "ask",       "note": "Text to reserve the next bake" },
     "produce":   { "status": "season",    "note": "Tomatoes and sweet corn this week" },
